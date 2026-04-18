@@ -8,7 +8,7 @@ import (
 
 func Сonvert(input string) string {
 	var converted string
-	converter := morse.NewConverter(morse.DefaultMorse)
+	converter := morse.NewConverter(morse.DefaultMorse, morse.WithLowercaseHandling(true))
 	if isMorse(input) {
 		converted = converter.ToText(input)
 	} else {

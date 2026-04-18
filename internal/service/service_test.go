@@ -57,6 +57,7 @@ func TestConvert(t *testing.T) {
 		{"morse to text", ".- -...", "АБ"},
 		{"hello text", "ПРИВЕТ", ".--. .-. .. .-- . -"},
 		{"hello morse", ".--. .-. .. .-- . -", "ПРИВЕТ"},
+		{"lowercase text", "Привет", ".--. .-. .. .-- . -"},
 	}
 
 	for _, tt := range tests {
